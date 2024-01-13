@@ -8,7 +8,7 @@ import time
 TOKEN = '6595098561:AAFLnPj-rPuut5lFJwfJff_G1pWo_k96D20'
 folder_path = 'D:/Pictures'
 data_file_path = "../downloaded.txt"
-queue_delay = 30
+queue_delay = 1
 channel_id = -1002134624887
 allowed_user_ids = {6913094634}
 publication_queue = []
@@ -21,7 +21,7 @@ logging.basicConfig(
 
 def check_status(file_name: str) -> bool:
     file_path = '../downloaded.txt'
-
+    file_name='54341.jpg'
     with open(file_path, 'a+') as file:
         file.seek(0)
         lines = file.readlines()
